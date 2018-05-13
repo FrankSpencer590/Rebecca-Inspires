@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     let bucketName = "randomlistofquotes"
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("CHANGE HERE")
         let background = UIColor(red: 90/255.0, green: 75/255.0, blue: 69/255.0, alpha: 1.0)
         view.backgroundColor = background
         
