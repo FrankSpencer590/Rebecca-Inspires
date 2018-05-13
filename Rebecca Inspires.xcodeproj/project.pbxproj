@@ -3,17 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		221B5236208FB3680069889F /* MyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221B5235208FB3680069889F /* MyData.swift */; };
 		22903F65208BCDAF00A44314 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22903F64208BCDAF00A44314 /* AppDelegate.swift */; };
-		22903F67208BCDAF00A44314 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22903F66208BCDAF00A44314 /* ViewController.swift */; };
+		22903F67208BCDAF00A44314 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22903F66208BCDAF00A44314 /* MainViewController.swift */; };
 		22903F6A208BCDAF00A44314 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22903F68208BCDAF00A44314 /* Main.storyboard */; };
 		22903F6C208BCDAF00A44314 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22903F6B208BCDAF00A44314 /* Assets.xcassets */; };
 		22903F6F208BCDAF00A44314 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22903F6D208BCDAF00A44314 /* LaunchScreen.storyboard */; };
 		22903F7A208BCDAF00A44314 /* Rebecca_InspiresTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22903F79208BCDAF00A44314 /* Rebecca_InspiresTests.swift */; };
 		22903F85208BCDAF00A44314 /* Rebecca_InspiresUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22903F84208BCDAF00A44314 /* Rebecca_InspiresUITests.swift */; };
+		22903F93208BCE9C00A44314 /* VideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22903F92208BCE9C00A44314 /* VideosViewController.swift */; };
+		29B1228A1055D845E466487A /* Pods_Rebecca_InspiresUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D953A201259BB988C469CC9A /* Pods_Rebecca_InspiresUITests.framework */; };
+		53C011583E7464B8A2ECCAF2 /* Pods_Rebecca_InspiresTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCB467C83C03064EE7FDD74 /* Pods_Rebecca_InspiresTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		221B5235208FB3680069889F /* MyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyData.swift; sourceTree = "<group>"; };
 		22903F61208BCDAF00A44314 /* Rebecca Inspires.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rebecca Inspires.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22903F64208BCDAF00A44314 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		22903F66208BCDAF00A44314 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		22903F66208BCDAF00A44314 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		22903F69208BCDAF00A44314 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22903F6B208BCDAF00A44314 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22903F6E208BCDAF00A44314 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +52,51 @@
 		22903F80208BCDAF00A44314 /* Rebecca InspiresUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rebecca InspiresUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22903F84208BCDAF00A44314 /* Rebecca_InspiresUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rebecca_InspiresUITests.swift; sourceTree = "<group>"; };
 		22903F86208BCDAF00A44314 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22903F92208BCE9C00A44314 /* VideosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosViewController.swift; sourceTree = "<group>"; };
+		22903F96208BD6F100A44314 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterCore.framework; path = "Rebecca Inspires/Twitter-Kit-iOS/TwitterCore.framework"; sourceTree = "<group>"; };
+		22903F98208BD6FC00A44314 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterKit.framework; path = "Rebecca Inspires/Twitter-Kit-iOS/TwitterKit.framework"; sourceTree = "<group>"; };
+		22AD2A8B208CD8FD000C977B /* AWSCloudWatch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCloudWatch.framework; path = "Rebecca Inspires/aws-ios-sdk-2.6.16/frameworks/AWSCloudWatch.framework"; sourceTree = "<group>"; };
+		22AD2A8C208CD8FD000C977B /* AWSDynamoDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSDynamoDB.framework; path = "Rebecca Inspires/aws-ios-sdk-2.6.16/frameworks/AWSDynamoDB.framework"; sourceTree = "<group>"; };
+		22AD2A8D208CD8FD000C977B /* AWSAPIGateway.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSAPIGateway.framework; path = "Rebecca Inspires/aws-ios-sdk-2.6.16/frameworks/AWSAPIGateway.framework"; sourceTree = "<group>"; };
+		22AD2A8E208CD8FD000C977B /* AWSCognito.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCognito.framework; path = "Rebecca Inspires/aws-ios-sdk-2.6.16/frameworks/AWSCognito.framework"; sourceTree = "<group>"; };
+		22AD2A8F208CD8FD000C977B /* AWSCognitoIdentityProvider.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCognitoIdentityProvider.framework; path = "Rebecca Inspires/aws-ios-sdk-2.6.16/frameworks/AWSCognitoIdentityProvider.framework"; sourceTree = "<group>"; };
+		22AD2A90208CD8FD000C977B /* AWSFacebookSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSFacebookSignIn.framework; path = "Rebecca Inspires/aws-ios-sdk-2.6.16/frameworks/AWSFacebookSignIn.framework"; sourceTree = "<group>"; };
+		22AD2A91208CD8FD000C977B /* AWSLex.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSLex.framework; path = "Rebecca Inspires/aws-ios-sdk-2.6.16/frameworks/AWSLex.framework"; sourceTree = "<group>"; };
+		22AD2A92208CD8FD000C977B /* AWSPolly.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSPolly.framework; path = "Rebecca Inspires/aws-ios-sdk-2.6.16/frameworks/AWSPolly.framework"; sourceTree = "<group>"; };
+		22AD2A93208CD8FD000C977B /* AWSSQS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSSQS.framework; path = "Rebecca Inspires/aws-ios-sdk-2.6.16/frameworks/AWSSQS.framework"; sourceTree = "<group>"; };
+		22AD2A94208CD8FD000C977B /* AWSEC2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSEC2.framework; path = "Rebecca Inspires/aws-ios-sdk-2.6.16/frameworks/AWSEC2.framework"; sourceTree = "<group>"; };
+		22AD2A95208CD8FD000C977B /* AWSCognitoIdentityProviderASF.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCognitoIdentityProviderASF.framework; path = "Rebecca Inspires/aws-ios-sdk-2.6.16/frameworks/AWSCognitoIdentityProviderASF.framework"; sourceTree = "<group>"; };
+		22AD2A96208CD8FD000C977B /* AWSCognitoAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCognitoAuth.framework; path = "Rebecca Inspires/aws-ios-sdk-2.6.16/frameworks/AWSCognitoAuth.framework"; sourceTree = "<group>"; };
+		22AD2A97208CD8FE000C977B /* AWSSES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSSES.framework; path = "Rebecca Inspires/aws-ios-sdk-2.6.16/frameworks/AWSSES.framework"; sourceTree = "<group>"; };
+		22AD2A98208CD8FE000C977B /* AWSElasticLoadBalancing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSElasticLoadBalancing.framework; path = "Rebecca Inspires/aws-ios-sdk-2.6.16/frameworks/AWSElasticLoadBalancing.framework"; sourceTree = "<group>"; };
+		22AD2A99208CD8FE000C977B /* AWSUserPoolsSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSUserPoolsSignIn.framework; path = "Rebecca Inspires/aws-ios-sdk-2.6.16/frameworks/AWSUserPoolsSignIn.framework"; sourceTree = "<group>"; };
+		22AD2A9A208CD8FE000C977B /* AWSGoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSGoogleSignIn.framework; path = "Rebecca Inspires/aws-ios-sdk-2.6.16/frameworks/AWSGoogleSignIn.framework"; sourceTree = "<group>"; };
+		22AD2A9B208CD8FE000C977B /* AWSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCore.framework; path = "Rebecca Inspires/aws-ios-sdk-2.6.16/frameworks/AWSCore.framework"; sourceTree = "<group>"; };
+		22AD2A9C208CD8FE000C977B /* AWSS3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSS3.framework; path = "Rebecca Inspires/aws-ios-sdk-2.6.16/frameworks/AWSS3.framework"; sourceTree = "<group>"; };
+		22AD2A9D208CD8FE000C977B /* AWSKinesis.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSKinesis.framework; path = "Rebecca Inspires/aws-ios-sdk-2.6.16/frameworks/AWSKinesis.framework"; sourceTree = "<group>"; };
+		22AD2A9E208CD8FE000C977B /* AWSAutoScaling.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSAutoScaling.framework; path = "Rebecca Inspires/aws-ios-sdk-2.6.16/frameworks/AWSAutoScaling.framework"; sourceTree = "<group>"; };
+		22AD2A9F208CD8FE000C977B /* AWSIoT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSIoT.framework; path = "Rebecca Inspires/aws-ios-sdk-2.6.16/frameworks/AWSIoT.framework"; sourceTree = "<group>"; };
+		22AD2AA0208CD8FF000C977B /* AWSRekognition.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSRekognition.framework; path = "Rebecca Inspires/aws-ios-sdk-2.6.16/frameworks/AWSRekognition.framework"; sourceTree = "<group>"; };
+		22AD2AA1208CD8FF000C977B /* AWSLogs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSLogs.framework; path = "Rebecca Inspires/aws-ios-sdk-2.6.16/frameworks/AWSLogs.framework"; sourceTree = "<group>"; };
+		22AD2AA2208CD8FF000C977B /* AWSKMS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSKMS.framework; path = "Rebecca Inspires/aws-ios-sdk-2.6.16/frameworks/AWSKMS.framework"; sourceTree = "<group>"; };
+		22AD2AA3208CD8FF000C977B /* AWSSNS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSSNS.framework; path = "Rebecca Inspires/aws-ios-sdk-2.6.16/frameworks/AWSSNS.framework"; sourceTree = "<group>"; };
+		22AD2AA4208CD8FF000C977B /* AWSMachineLearning.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSMachineLearning.framework; path = "Rebecca Inspires/aws-ios-sdk-2.6.16/frameworks/AWSMachineLearning.framework"; sourceTree = "<group>"; };
+		22AD2AA5208CD8FF000C977B /* AWSSimpleDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSSimpleDB.framework; path = "Rebecca Inspires/aws-ios-sdk-2.6.16/frameworks/AWSSimpleDB.framework"; sourceTree = "<group>"; };
+		22AD2AA6208CD8FF000C977B /* AWSLambda.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSLambda.framework; path = "Rebecca Inspires/aws-ios-sdk-2.6.16/frameworks/AWSLambda.framework"; sourceTree = "<group>"; };
+		22AD2AA7208CD8FF000C977B /* AWSAuthUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSAuthUI.framework; path = "Rebecca Inspires/aws-ios-sdk-2.6.16/frameworks/AWSAuthUI.framework"; sourceTree = "<group>"; };
+		22AD2AA8208CD8FF000C977B /* AWSAuthCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSAuthCore.framework; path = "Rebecca Inspires/aws-ios-sdk-2.6.16/frameworks/AWSAuthCore.framework"; sourceTree = "<group>"; };
+		22AD2AA9208CD8FF000C977B /* AWSMobileClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSMobileClient.framework; path = "Rebecca Inspires/aws-ios-sdk-2.6.16/frameworks/AWSMobileClient.framework"; sourceTree = "<group>"; };
+		22AD2AAA208CD8FF000C977B /* AWSPinpoint.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSPinpoint.framework; path = "Rebecca Inspires/aws-ios-sdk-2.6.16/frameworks/AWSPinpoint.framework"; sourceTree = "<group>"; };
+		22AD2AAB208CD8FF000C977B /* AWSMobileAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSMobileAnalytics.framework; path = "Rebecca Inspires/aws-ios-sdk-2.6.16/frameworks/AWSMobileAnalytics.framework"; sourceTree = "<group>"; };
+		46B192011BFE6AA6401277DE /* Pods-Rebecca InspiresTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rebecca InspiresTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rebecca InspiresTests/Pods-Rebecca InspiresTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5B4887800373341C62909292 /* Pods-Rebecca Inspires.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rebecca Inspires.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rebecca Inspires/Pods-Rebecca Inspires.release.xcconfig"; sourceTree = "<group>"; };
+		ACCB467C83C03064EE7FDD74 /* Pods_Rebecca_InspiresTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rebecca_InspiresTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBAE5AF3E02DD59AF0E998C7 /* Pods-Rebecca InspiresUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rebecca InspiresUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rebecca InspiresUITests/Pods-Rebecca InspiresUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C60CE236AC4E8539D4FC0AFF /* Pods_Rebecca_Inspires.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rebecca_Inspires.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D953A201259BB988C469CC9A /* Pods_Rebecca_InspiresUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rebecca_InspiresUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC5400AD20F6DC715F6507BB /* Pods-Rebecca Inspires.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rebecca Inspires.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rebecca Inspires/Pods-Rebecca Inspires.debug.xcconfig"; sourceTree = "<group>"; };
+		F7DA1BB153AAF7A130D4DB4A /* Pods-Rebecca InspiresTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rebecca InspiresTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rebecca InspiresTests/Pods-Rebecca InspiresTests.release.xcconfig"; sourceTree = "<group>"; };
+		FC24245E90696F8CBA252665 /* Pods-Rebecca InspiresUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rebecca InspiresUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rebecca InspiresUITests/Pods-Rebecca InspiresUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53C011583E7464B8A2ECCAF2 /* Pods_Rebecca_InspiresTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29B1228A1055D845E466487A /* Pods_Rebecca_InspiresUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +133,8 @@
 				22903F78208BCDAF00A44314 /* Rebecca InspiresTests */,
 				22903F83208BCDAF00A44314 /* Rebecca InspiresUITests */,
 				22903F62208BCDAF00A44314 /* Products */,
+				22903F95208BD6F100A44314 /* Frameworks */,
+				BAD6FFCE260F0A8F979C44D3 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,9 +152,11 @@
 			isa = PBXGroup;
 			children = (
 				22903F64208BCDAF00A44314 /* AppDelegate.swift */,
-				22903F66208BCDAF00A44314 /* ViewController.swift */,
+				22903F66208BCDAF00A44314 /* MainViewController.swift */,
+				22903F92208BCE9C00A44314 /* VideosViewController.swift */,
 				22903F68208BCDAF00A44314 /* Main.storyboard */,
 				22903F6B208BCDAF00A44314 /* Assets.xcassets */,
+				221B5235208FB3680069889F /* MyData.swift */,
 				22903F6D208BCDAF00A44314 /* LaunchScreen.storyboard */,
 				22903F70208BCDAF00A44314 /* Info.plist */,
 			);
@@ -125,6 +181,64 @@
 			path = "Rebecca InspiresUITests";
 			sourceTree = "<group>";
 		};
+		22903F95208BD6F100A44314 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22AD2A8D208CD8FD000C977B /* AWSAPIGateway.framework */,
+				22AD2AA8208CD8FF000C977B /* AWSAuthCore.framework */,
+				22AD2AA7208CD8FF000C977B /* AWSAuthUI.framework */,
+				22AD2A9E208CD8FE000C977B /* AWSAutoScaling.framework */,
+				22AD2A8B208CD8FD000C977B /* AWSCloudWatch.framework */,
+				22AD2A8E208CD8FD000C977B /* AWSCognito.framework */,
+				22AD2A96208CD8FD000C977B /* AWSCognitoAuth.framework */,
+				22AD2A8F208CD8FD000C977B /* AWSCognitoIdentityProvider.framework */,
+				22AD2A95208CD8FD000C977B /* AWSCognitoIdentityProviderASF.framework */,
+				22AD2A9B208CD8FE000C977B /* AWSCore.framework */,
+				22AD2A8C208CD8FD000C977B /* AWSDynamoDB.framework */,
+				22AD2A94208CD8FD000C977B /* AWSEC2.framework */,
+				22AD2A98208CD8FE000C977B /* AWSElasticLoadBalancing.framework */,
+				22AD2A90208CD8FD000C977B /* AWSFacebookSignIn.framework */,
+				22AD2A9A208CD8FE000C977B /* AWSGoogleSignIn.framework */,
+				22AD2A9F208CD8FE000C977B /* AWSIoT.framework */,
+				22AD2A9D208CD8FE000C977B /* AWSKinesis.framework */,
+				22AD2AA2208CD8FF000C977B /* AWSKMS.framework */,
+				22AD2AA6208CD8FF000C977B /* AWSLambda.framework */,
+				22AD2A91208CD8FD000C977B /* AWSLex.framework */,
+				22AD2AA1208CD8FF000C977B /* AWSLogs.framework */,
+				22AD2AA4208CD8FF000C977B /* AWSMachineLearning.framework */,
+				22AD2AAB208CD8FF000C977B /* AWSMobileAnalytics.framework */,
+				22AD2AA9208CD8FF000C977B /* AWSMobileClient.framework */,
+				22AD2AAA208CD8FF000C977B /* AWSPinpoint.framework */,
+				22AD2A92208CD8FD000C977B /* AWSPolly.framework */,
+				22AD2AA0208CD8FF000C977B /* AWSRekognition.framework */,
+				22AD2A9C208CD8FE000C977B /* AWSS3.framework */,
+				22AD2A97208CD8FE000C977B /* AWSSES.framework */,
+				22AD2AA5208CD8FF000C977B /* AWSSimpleDB.framework */,
+				22AD2AA3208CD8FF000C977B /* AWSSNS.framework */,
+				22AD2A93208CD8FD000C977B /* AWSSQS.framework */,
+				22AD2A99208CD8FE000C977B /* AWSUserPoolsSignIn.framework */,
+				22903F98208BD6FC00A44314 /* TwitterKit.framework */,
+				22903F96208BD6F100A44314 /* TwitterCore.framework */,
+				C60CE236AC4E8539D4FC0AFF /* Pods_Rebecca_Inspires.framework */,
+				ACCB467C83C03064EE7FDD74 /* Pods_Rebecca_InspiresTests.framework */,
+				D953A201259BB988C469CC9A /* Pods_Rebecca_InspiresUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BAD6FFCE260F0A8F979C44D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DC5400AD20F6DC715F6507BB /* Pods-Rebecca Inspires.debug.xcconfig */,
+				5B4887800373341C62909292 /* Pods-Rebecca Inspires.release.xcconfig */,
+				46B192011BFE6AA6401277DE /* Pods-Rebecca InspiresTests.debug.xcconfig */,
+				F7DA1BB153AAF7A130D4DB4A /* Pods-Rebecca InspiresTests.release.xcconfig */,
+				BBAE5AF3E02DD59AF0E998C7 /* Pods-Rebecca InspiresUITests.debug.xcconfig */,
+				FC24245E90696F8CBA252665 /* Pods-Rebecca InspiresUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,6 +246,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22903F89208BCDAF00A44314 /* Build configuration list for PBXNativeTarget "Rebecca Inspires" */;
 			buildPhases = (
+				3692C9AEC567776D478F77EE /* [CP] Check Pods Manifest.lock */,
 				22903F5D208BCDAF00A44314 /* Sources */,
 				22903F5E208BCDAF00A44314 /* Frameworks */,
 				22903F5F208BCDAF00A44314 /* Resources */,
@@ -149,6 +264,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22903F8C208BCDAF00A44314 /* Build configuration list for PBXNativeTarget "Rebecca InspiresTests" */;
 			buildPhases = (
+				D2CED4326D98E3901C64D259 /* [CP] Check Pods Manifest.lock */,
 				22903F71208BCDAF00A44314 /* Sources */,
 				22903F72208BCDAF00A44314 /* Frameworks */,
 				22903F73208BCDAF00A44314 /* Resources */,
@@ -167,6 +283,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22903F8F208BCDAF00A44314 /* Build configuration list for PBXNativeTarget "Rebecca InspiresUITests" */;
 			buildPhases = (
+				4263E63375F22ED9316F2C23 /* [CP] Check Pods Manifest.lock */,
 				22903F7C208BCDAF00A44314 /* Sources */,
 				22903F7D208BCDAF00A44314 /* Frameworks */,
 				22903F7E208BCDAF00A44314 /* Resources */,
@@ -188,11 +305,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Samuel Miller";
 				TargetAttributes = {
 					22903F60208BCDAF00A44314 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0930;
 						ProvisioningStyle = Automatic;
 					};
 					22903F74208BCDAF00A44314 = {
@@ -208,7 +326,7 @@
 				};
 			};
 			buildConfigurationList = 22903F5C208BCDAF00A44314 /* Build configuration list for PBXProject "Rebecca Inspires" */;
-			compatibilityVersion = "Xcode 8.0";
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -254,13 +372,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3692C9AEC567776D478F77EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Rebecca Inspires-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4263E63375F22ED9316F2C23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Rebecca InspiresUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2CED4326D98E3901C64D259 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Rebecca InspiresTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		22903F5D208BCDAF00A44314 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22903F67208BCDAF00A44314 /* ViewController.swift in Sources */,
+				22903F93208BCE9C00A44314 /* VideosViewController.swift in Sources */,
+				22903F67208BCDAF00A44314 /* MainViewController.swift in Sources */,
 				22903F65208BCDAF00A44314 /* AppDelegate.swift in Sources */,
+				221B5236208FB3680069889F /* MyData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +506,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -336,6 +514,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -368,6 +547,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -386,6 +566,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -393,6 +574,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -417,21 +599,71 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		22903F8A208BCDAF00A44314 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC5400AD20F6DC715F6507BB /* Pods-Rebecca Inspires.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8NVY4CRKVK;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/Twitter-Kit-iOS",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/Twitter-Kit-iOS",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/Twitter-Kit-iOS",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/Twitter-Kit-iOS",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/Twitter-Kit-iOS",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+				);
 				INFOPLIST_FILE = "Rebecca Inspires/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "RHMC.Rebecca-Inspires";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RHMC.RebeccaInspires;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OBJC_BRIDGING_HEADER = "Rebecca Inspires/Rebecca Inspires-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -439,14 +671,61 @@
 		};
 		22903F8B208BCDAF00A44314 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B4887800373341C62909292 /* Pods-Rebecca Inspires.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8NVY4CRKVK;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/Twitter-Kit-iOS",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/Twitter-Kit-iOS",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/Twitter-Kit-iOS",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/Twitter-Kit-iOS",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/Twitter-Kit-iOS",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+					"$(PROJECT_DIR)/Rebecca\\ Inspires/aws-ios-sdk-2.6.16/frameworks",
+				);
 				INFOPLIST_FILE = "Rebecca Inspires/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "RHMC.Rebecca-Inspires";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RHMC.RebeccaInspires;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Rebecca Inspires/Rebecca Inspires-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -454,13 +733,18 @@
 		};
 		22903F8D208BCDAF00A44314 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46B192011BFE6AA6401277DE /* Pods-Rebecca InspiresTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8NVY4CRKVK;
 				INFOPLIST_FILE = "Rebecca InspiresTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "RHMC.Rebecca-InspiresTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -471,13 +755,18 @@
 		};
 		22903F8E208BCDAF00A44314 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7DA1BB153AAF7A130D4DB4A /* Pods-Rebecca InspiresTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8NVY4CRKVK;
 				INFOPLIST_FILE = "Rebecca InspiresTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "RHMC.Rebecca-InspiresTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -488,12 +777,17 @@
 		};
 		22903F90208BCDAF00A44314 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBAE5AF3E02DD59AF0E998C7 /* Pods-Rebecca InspiresUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8NVY4CRKVK;
 				INFOPLIST_FILE = "Rebecca InspiresUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "RHMC.Rebecca-InspiresUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -504,12 +798,17 @@
 		};
 		22903F91208BCDAF00A44314 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC24245E90696F8CBA252665 /* Pods-Rebecca InspiresUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8NVY4CRKVK;
 				INFOPLIST_FILE = "Rebecca InspiresUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "RHMC.Rebecca-InspiresUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
