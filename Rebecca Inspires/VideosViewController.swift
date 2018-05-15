@@ -24,9 +24,8 @@ class VideosViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         buy.layer.masksToBounds = true
         playsample.layer.cornerRadius = 30.0
         playsample.layer.masksToBounds = true
-        let background = UIColor(red: 189/255.0, green: 165/255.0, blue: 11/255.0, alpha: 1.0)
         
-        view.backgroundColor = background
+        
         //Start of courses from internet
         MyData.sharedInstance.videos.removeAll()
         if let url = URL(string: "https://s3.eu-west-2.amazonaws.com/rebeccas.videos/Rebecca's+Courses.txt") {

@@ -18,9 +18,6 @@ class ViewController: UIViewController, UIViewControllerTransitioningDelegate {
         
         menuButton.layer.cornerRadius = menuButton.frame.size.width / 2
         
-        let background = UIColor(red: 90/255.0, green: 75/255.0, blue: 69/255.0, alpha: 1.0)
-        view.backgroundColor = background
-        
         //Pulling from Website
         if let url = URL(string: "https://s3.eu-west-2.amazonaws.com/randomlistofquotes/Rebecca's+Quotes.txt") {
             do {
@@ -53,26 +50,6 @@ class ViewController: UIViewController, UIViewControllerTransitioningDelegate {
         }
     }//End of viewDidLoad
     //Social Media Buttons
-    @IBAction func TwitterButton(_ sender: Any) {
-        if let url = URL(string: "https://twitter.com/Rebeccainspires/") {
-            UIApplication.shared.open(url, options: [:])
-        }
-    }
-    @IBAction func InstagramButton(_ sender: Any) {
-        if let url = URL(string: "https://www.instagram.com/rebeccainspires/?hl=en") {
-            UIApplication.shared.open(url, options: [:])
-        }
-    }
-    @IBAction func YoutubeButton(_ sender: Any) {
-        if let url = URL(string: "https://www.youtube.com/channel/UCDSlzoY9sLzquSkhZ0TFZYA") {
-            UIApplication.shared.open(url, options: [:])
-        }
-    }
-    @IBAction func FacebookButton(_ sender: Any) {
-        if let url = URL(string: "https://www.facebook.com/RebeccaInspires") {
-            UIApplication.shared.open(url, options: [:])
-        }
-    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let secondVC = segue.destination as! VideosViewController
