@@ -17,6 +17,10 @@ class VideosViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        buy.layer.cornerRadius = 10.0
+        buy.layer.masksToBounds = true
+        playsample.layer.cornerRadius = 10.0
+        playsample.layer.masksToBounds = true
         let background = UIColor(red: 90/255.0, green: 75/255.0, blue: 69/255.0, alpha: 1.0)
         view.backgroundColor = background
         //Start of courses from internet
@@ -37,6 +41,28 @@ class VideosViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     @IBAction func Play(_ sender: Any) {
         playVideo(url: url)
     }
+    
+    @IBAction func buypressed(_ sender: Any) {
+        //Animation
+        let theButton = sender as! UIButton
+        
+        let bounds = theButton.bounds
+        
+        UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 10, options: .curveEaseInOut, animations: {
+            theButton.bounds = CGRect(x: bounds.origin.x - 20, y: bounds.origin.y, width: bounds.size.width + 60, height: bounds.size.height)
+        }) { (success:Bool) in
+            if success {
+                
+                UIView.animate(withDuration: 0.5, animations: {
+                    theButton.bounds = bounds
+                })
+                
+            }
+        }
+        //Rest of Buy Button code:
+    }
+    
+    
     
     @IBOutlet weak var buy: UIButton!
     @IBOutlet weak var playsample: UIButton!

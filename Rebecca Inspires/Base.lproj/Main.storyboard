@@ -18,21 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="au1-Lr-0HT">
-                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <items>
-                                    <barButtonItem systemItem="search" id="bpg-4R-8QX"/>
-                                    <barButtonItem systemItem="flexibleSpace" id="Q0Z-EV-0De"/>
-                                    <barButtonItem title="Home" id="QtN-6y-4Z3"/>
-                                    <barButtonItem systemItem="flexibleSpace" id="Mni-gO-2gx"/>
-                                    <barButtonItem systemItem="bookmarks" id="fsm-9C-rMz">
-                                        <connections>
-                                            <segue destination="CjE-Ed-jDk" kind="show" id="dg4-WX-35g"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="BE YOURSELF - REALISE YOUR POTENTIAL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UoX-J3-Vl0">
                                 <rect key="frame" x="16" y="103" width="343" height="26"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -82,6 +67,30 @@
                                 <rect key="frame" x="101" y="20" width="172" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4DP-1K-nVW">
+                                <rect key="frame" x="303" y="552" width="56" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.74418604373931885" green="0.64786112308502197" blue="0.03036937303841114" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Shop"/>
+                                <connections>
+                                    <segue destination="CjE-Ed-jDk" kind="show" id="eNH-2q-jqY"/>
+                                </connections>
+                            </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="au1-Lr-0HT">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem systemItem="search" id="bpg-4R-8QX"/>
+                                    <barButtonItem systemItem="flexibleSpace" id="Q0Z-EV-0De"/>
+                                    <barButtonItem title="Home" id="QtN-6y-4Z3"/>
+                                    <barButtonItem systemItem="flexibleSpace" id="Mni-gO-2gx"/>
+                                    <barButtonItem systemItem="bookmarks" id="fsm-9C-rMz">
+                                        <connections>
+                                            <segue destination="CjE-Ed-jDk" kind="show" id="dy4-b2-ubN"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.30461274639604052" green="0.25307083532686631" blue="0.23281483352520774" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -95,6 +104,7 @@
                     </view>
                     <connections>
                         <outlet property="TwitterQuotes" destination="KjK-dR-Eo5" id="WEy-xg-DPf"/>
+                        <outlet property="menuButton" destination="4DP-1K-nVW" id="zww-cc-6eI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -139,7 +149,8 @@
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELW-dh-as4">
                                 <rect key="frame" x="72" y="408" width="231" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                <color key="backgroundColor" red="0.74418431520462036" green="0.64784842729568481" blue="0.042180754244327545" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title=" Play Sample">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -148,12 +159,16 @@
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dU3-Px-QBd">
-                                <rect key="frame" x="122" y="503" width="131" height="79"/>
+                                <rect key="frame" x="72" y="513" width="231" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="backgroundColor" red="0.74418431520462036" green="0.64784842729568481" blue="0.042180754244327545" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="Buy Now">
                                     <color key="titleColor" red="0.99877062182741116" green="0.99877062182741116" blue="0.99877062182741116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="buypressed:" destination="CjE-Ed-jDk" eventType="touchUpInside" id="ChL-Jz-i3G"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -176,5 +191,8 @@
         <image name="Twitter Logo" width="207" height="205"/>
         <image name="Youtube Logo" width="212" height="203"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="dy4-b2-ubN"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.35436290502548218" green="0.2942902147769928" blue="0.26866888999938965" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

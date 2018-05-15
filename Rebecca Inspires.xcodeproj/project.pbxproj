@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		221B5236208FB3680069889F /* MyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221B5235208FB3680069889F /* MyData.swift */; };
+		223FC2C720AB34690086F686 /* CircularTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223FC2C620AB34690086F686 /* CircularTransition.swift */; };
 		22903F65208BCDAF00A44314 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22903F64208BCDAF00A44314 /* AppDelegate.swift */; };
 		22903F67208BCDAF00A44314 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22903F66208BCDAF00A44314 /* MainViewController.swift */; };
 		22903F6A208BCDAF00A44314 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22903F68208BCDAF00A44314 /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		221B5235208FB3680069889F /* MyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyData.swift; sourceTree = "<group>"; };
+		223FC2C620AB34690086F686 /* CircularTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CircularTransition.swift; path = "../../CircularTransition-master/CircularTransition/CircularTransition.swift"; sourceTree = "<group>"; };
 		22903F61208BCDAF00A44314 /* Rebecca Inspires.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rebecca Inspires.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22903F64208BCDAF00A44314 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22903F66208BCDAF00A44314 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				22903F64208BCDAF00A44314 /* AppDelegate.swift */,
 				22903F66208BCDAF00A44314 /* MainViewController.swift */,
 				22903F92208BCE9C00A44314 /* VideosViewController.swift */,
+				223FC2C620AB34690086F686 /* CircularTransition.swift */,
 				22903F68208BCDAF00A44314 /* Main.storyboard */,
 				22903F6B208BCDAF00A44314 /* Assets.xcassets */,
 				221B5235208FB3680069889F /* MyData.swift */,
@@ -434,6 +437,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				223FC2C720AB34690086F686 /* CircularTransition.swift in Sources */,
 				22903F93208BCE9C00A44314 /* VideosViewController.swift in Sources */,
 				22903F67208BCDAF00A44314 /* MainViewController.swift in Sources */,
 				22903F65208BCDAF00A44314 /* AppDelegate.swift in Sources */,

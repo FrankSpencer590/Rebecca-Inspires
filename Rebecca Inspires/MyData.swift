@@ -13,5 +13,6 @@ class MyData: NSObject {
     var selectedvideo = "NONE"
     var videoUrls = [String]()
     var selectedUrl = "NONE"
+    var loggedin = 3
     static let sharedInstance = MyData()
 }
