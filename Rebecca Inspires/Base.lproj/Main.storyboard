@@ -40,7 +40,6 @@
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="Login:" destination="M1v-Zz-Jls" eventType="touchUpInside" id="NUp-Bk-0CU"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="rph-AC-KGL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NMh-7i-yfc">
@@ -209,7 +208,7 @@
         <image name="Logo" width="1842" height="862"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="rph-AC-KGL"/>
+        <segue reference="eNH-2q-jqY"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.35436290502548218" green="0.2942902147769928" blue="0.26866888999938965" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

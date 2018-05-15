@@ -15,7 +15,15 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var password: UITextField!
     
     @IBAction func Login(_ sender: Any) {
+        if ((MyData.sharedInstance.logindetails[emailaddress.text!]) != nil) {
+            MyData.sharedInstance.correctemail = true
+            print(MyData.sharedInstance.logindetails[emailaddress.text!])
+        }
+        else{
+            MyData.sharedInstance.correctemail = false
+        }
     }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

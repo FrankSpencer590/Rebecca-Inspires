@@ -14,5 +14,8 @@ class MyData: NSObject {
     var videoUrls = [String]()
     var selectedUrl = "NONE"
     var loggedin = 3
+    var logindetails = ["a@b.com":"apples123"]
+    var correctemail = false
+    var correctpassword = false
     static let sharedInstance = MyData()
 }
