@@ -13,15 +13,19 @@ import AVFoundation
 let url = NSURL(string: MyData.sharedInstance.selectedUrl)!
 
 class VideosViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
-
+    @IBOutlet weak var dismissButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        buy.layer.cornerRadius = 10.0
+        
+        dismissButton.layer.cornerRadius = dismissButton.frame.size.width / 2
+        buy.layer.cornerRadius = 30.0
         buy.layer.masksToBounds = true
-        playsample.layer.cornerRadius = 10.0
+        playsample.layer.cornerRadius = 30.0
         playsample.layer.masksToBounds = true
-        let background = UIColor(red: 90/255.0, green: 75/255.0, blue: 69/255.0, alpha: 1.0)
+        let background = UIColor(red: 189/255.0, green: 165/255.0, blue: 11/255.0, alpha: 1.0)
+        
         view.backgroundColor = background
         //Start of courses from internet
         MyData.sharedInstance.videos.removeAll()
@@ -37,6 +41,10 @@ class VideosViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         } else {
             // the URL was bad!
         }
+    }
+    
+    @IBAction func dismissVideosVC(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
     @IBAction func Play(_ sender: Any) {
         playVideo(url: url)
