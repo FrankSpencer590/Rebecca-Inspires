@@ -15,7 +15,6 @@ class ViewController: UIViewController, UIViewControllerTransitioningDelegate {
     let transition = CircularTransition()
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         menuButton.layer.cornerRadius = menuButton.frame.size.width / 2
         
         //Pulling from Website

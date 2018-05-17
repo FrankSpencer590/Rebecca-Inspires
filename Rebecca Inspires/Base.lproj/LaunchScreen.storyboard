@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,20 +18,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="G0r-JA-p2a">
-                                <rect key="frame" x="104" y="282" width="166" height="102"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="G0r-JA-p2a" secondAttribute="height" multiplier="83:51" id="kZE-XM-y7J"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="A0M-1c-cjV">
+                                <rect key="frame" x="54" y="281" width="266" height="105"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.35436290502548218" green="0.2942902147769928" blue="0.26866888999938965" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="G0r-JA-p2a" secondAttribute="bottom" constant="283" id="MiS-j2-de8"/>
-                            <constraint firstItem="G0r-JA-p2a" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="262" id="cwo-Wf-PSR"/>
-                            <constraint firstItem="G0r-JA-p2a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="104" id="fDF-D6-Wbf"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="G0r-JA-p2a" secondAttribute="trailing" constant="105" id="qGY-m3-YZC"/>
+                            <constraint firstItem="A0M-1c-cjV" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="QOM-zb-ibZ"/>
+                            <constraint firstItem="A0M-1c-cjV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="261" id="ShZ-8f-rjo"/>
+                            <constraint firstItem="A0M-1c-cjV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="54" id="p78-Mi-4Wa"/>
+                            <constraint firstItem="A0M-1c-cjV" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="yyS-1y-6yM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -43,6 +39,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Logo" width="1594" height="596"/>
+        <image name="Logo" width="1842" height="862"/>
     </resources>
 </document>

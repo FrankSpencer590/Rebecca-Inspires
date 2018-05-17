@@ -8,29 +8,62 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UIViewControllerTransitioningDelegate {
     @IBOutlet weak var LoginButton: UIButton!
     @IBOutlet weak var SignUpButton: UIButton!
-    @IBOutlet weak var emailaddress: UITextField!
-    @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var emailaddress: ShakingTextField!
+    @IBOutlet weak var password: ShakingTextField!
+    @IBOutlet weak var IncorrectLabel: UILabel!
+    let transition = CircularTransition()
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.transitionMode = .present
+        transition.startingPoint = LoginButton.center
+        transition.circleColor = LoginButton.backgroundColor!
+        
+        return transition
+    }
+    
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.transitionMode = .dismiss
+        transition.startingPoint = LoginButton.center
+        transition.circleColor = LoginButton.backgroundColor!
+        
+        return transition
+    }
+    
+    
     
     @IBAction func Login(_ sender: Any) {
         if ((MyData.sharedInstance.logindetails[emailaddress.text!]) != nil) {
             MyData.sharedInstance.correctemail = true
-            print(MyData.sharedInstance.logindetails[emailaddress.text!])
+            let expectedpassword = (MyData.sharedInstance.logindetails[emailaddress.text!])
+            if expectedpassword == password.text! {
+                MyData.sharedInstance.correctpassword == true
+                IncorrectLabel.isHidden = true
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "MainViewController") as! ViewController
+                present(vc, animated: true, completion: nil)
+            }
+            else{
+                MyData.sharedInstance.correctpassword = false
+                IncorrectLabel.isHidden = false
+                password.shake()
+            }
         }
         else{
             MyData.sharedInstance.correctemail = false
+            IncorrectLabel.isHidden = false
+            emailaddress.shake()
         }
     }
-
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        LoginButton.layer.cornerRadius = 30.0
-        LoginButton.layer.masksToBounds = true
-        SignUpButton.layer.cornerRadius = 30.0
-        SignUpButton.layer.masksToBounds = true
+        LoginButton.layer.cornerRadius = LoginButton.frame.size.width / 2
+        SignUpButton.layer.cornerRadius = SignUpButton.frame.size.width / 2
         
         emailaddress.delegate = self
         password.delegate = self
@@ -40,17 +73,6 @@ class LoginViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
 

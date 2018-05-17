@@ -18,6 +18,8 @@
 		22903F7A208BCDAF00A44314 /* Rebecca_InspiresTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22903F79208BCDAF00A44314 /* Rebecca_InspiresTests.swift */; };
 		22903F85208BCDAF00A44314 /* Rebecca_InspiresUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22903F84208BCDAF00A44314 /* Rebecca_InspiresUITests.swift */; };
 		22903F93208BCE9C00A44314 /* VideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22903F92208BCE9C00A44314 /* VideosViewController.swift */; };
+		22E7554A20ADD90B00B3D269 /* ShakingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E7554920ADD90B00B3D269 /* ShakingTextField.swift */; };
+		22E7555020ADFC9500B3D269 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E7554F20ADFC9500B3D269 /* SignupViewController.swift */; };
 		29B1228A1055D845E466487A /* Pods_Rebecca_InspiresUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D953A201259BB988C469CC9A /* Pods_Rebecca_InspiresUITests.framework */; };
 		53C011583E7464B8A2ECCAF2 /* Pods_Rebecca_InspiresTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCB467C83C03064EE7FDD74 /* Pods_Rebecca_InspiresTests.framework */; };
 /* End PBXBuildFile section */
@@ -92,6 +94,8 @@
 		22AD2AA9208CD8FF000C977B /* AWSMobileClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSMobileClient.framework; path = "Rebecca Inspires/aws-ios-sdk-2.6.16/frameworks/AWSMobileClient.framework"; sourceTree = "<group>"; };
 		22AD2AAA208CD8FF000C977B /* AWSPinpoint.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSPinpoint.framework; path = "Rebecca Inspires/aws-ios-sdk-2.6.16/frameworks/AWSPinpoint.framework"; sourceTree = "<group>"; };
 		22AD2AAB208CD8FF000C977B /* AWSMobileAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSMobileAnalytics.framework; path = "Rebecca Inspires/aws-ios-sdk-2.6.16/frameworks/AWSMobileAnalytics.framework"; sourceTree = "<group>"; };
+		22E7554920ADD90B00B3D269 /* ShakingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakingTextField.swift; sourceTree = "<group>"; };
+		22E7554F20ADFC9500B3D269 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		46B192011BFE6AA6401277DE /* Pods-Rebecca InspiresTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rebecca InspiresTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rebecca InspiresTests/Pods-Rebecca InspiresTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5B4887800373341C62909292 /* Pods-Rebecca Inspires.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rebecca Inspires.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rebecca Inspires/Pods-Rebecca Inspires.release.xcconfig"; sourceTree = "<group>"; };
 		ACCB467C83C03064EE7FDD74 /* Pods_Rebecca_InspiresTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rebecca_InspiresTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,7 +159,7 @@
 		22903F63208BCDAF00A44314 /* Rebecca Inspires */ = {
 			isa = PBXGroup;
 			children = (
-				22903F64208BCDAF00A44314 /* AppDelegate.swift */,
+				22E7554F20ADFC9500B3D269 /* SignupViewController.swift */,
 				226A40AF20AB5C9F009ED01D /* LoginViewController.swift */,
 				22903F66208BCDAF00A44314 /* MainViewController.swift */,
 				22903F92208BCE9C00A44314 /* VideosViewController.swift */,
@@ -163,6 +167,8 @@
 				22903F6B208BCDAF00A44314 /* Assets.xcassets */,
 				221B5235208FB3680069889F /* MyData.swift */,
 				223FC2C620AB34690086F686 /* CircularTransition.swift */,
+				22E7554920ADD90B00B3D269 /* ShakingTextField.swift */,
+				22903F64208BCDAF00A44314 /* AppDelegate.swift */,
 				22903F6D208BCDAF00A44314 /* LaunchScreen.storyboard */,
 				22903F70208BCDAF00A44314 /* Info.plist */,
 			);
@@ -442,7 +448,9 @@
 			files = (
 				226A40B020AB5C9F009ED01D /* LoginViewController.swift in Sources */,
 				223FC2C720AB34690086F686 /* CircularTransition.swift in Sources */,
+				22E7555020ADFC9500B3D269 /* SignupViewController.swift in Sources */,
 				22903F93208BCE9C00A44314 /* VideosViewController.swift in Sources */,
+				22E7554A20ADD90B00B3D269 /* ShakingTextField.swift in Sources */,
 				22903F67208BCDAF00A44314 /* MainViewController.swift in Sources */,
 				22903F65208BCDAF00A44314 /* AppDelegate.swift in Sources */,
 				221B5236208FB3680069889F /* MyData.swift in Sources */,
