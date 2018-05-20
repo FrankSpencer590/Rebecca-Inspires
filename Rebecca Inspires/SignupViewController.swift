@@ -65,9 +65,7 @@ class SignupViewController: UIViewController {
                                             MyData.sharedInstance.usernames.append(Username.text!)
                                             let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
                                             present(vc, animated: true, completion: nil)
-                                            print(MyData.sharedInstance.logindetails)
-                                            print(MyData.sharedInstance.names)
-                                            print(MyData.sharedInstance.usernames)
+                                            print("Sign Up Complete")
                                         }
                                         else{
                                             passmatch.isHidden = false
