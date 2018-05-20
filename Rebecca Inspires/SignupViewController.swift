@@ -60,8 +60,14 @@ class SignupViewController: UIViewController {
                                     else{
                                         if (Password.text!) == (ConfirmPassword.text!) {
                                             //Perfect Signup
-                                            let vc = self.storyboard?.instantiateViewController(withIdentifier: "MainViewController") as! ViewController
+                                            MyData.sharedInstance.logindetails[Emailaddress.text!] = Password.text!
+                                            MyData.sharedInstance.names[FirstName.text!] = Surname.text!
+                                            MyData.sharedInstance.usernames.append(Username.text!)
+                                            let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
                                             present(vc, animated: true, completion: nil)
+                                            print(MyData.sharedInstance.logindetails)
+                                            print(MyData.sharedInstance.names)
+                                            print(MyData.sharedInstance.usernames)
                                         }
                                         else{
                                             passmatch.isHidden = false

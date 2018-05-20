@@ -16,6 +16,7 @@ class MyData: NSObject {
     var loggedin = 3
     var logindetails = ["a@b.com":"apples123"]
     var usernames = ["sammybob"]
+    var names = ["John":"Appleseed"]
     var correctemail = false
     var correctpassword = false
     static let sharedInstance = MyData()
