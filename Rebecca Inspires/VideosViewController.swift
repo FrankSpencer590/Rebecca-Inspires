@@ -10,7 +10,7 @@ import UIKit
 import AVKit
 import AVFoundation
 
-let url = NSURL(string: MyData.sharedInstance.selectedUrl)!
+var url = NSURL(string: MyData.sharedInstance.selectedUrl)!
 
 class VideosViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     @IBOutlet weak var dismissButton: UIButton!
@@ -46,6 +46,7 @@ class VideosViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         self.dismiss(animated: true, completion: nil)
     }
     @IBAction func Play(_ sender: Any) {
+        url = NSURL(string: MyData.sharedInstance.selectedUrl)!
         playVideo(url: url)
     }
     
