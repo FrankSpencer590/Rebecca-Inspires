@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class SignupViewController: UIViewController {
     @IBOutlet weak var emailreg: UILabel!
@@ -70,6 +71,15 @@ class SignupViewController: UIViewController {
                                             let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
                                             present(vc, animated: true, completion: nil)
                                             print("Sign Up Complete")
+                                            
+                                            let context = (UIApplication.shared.delegate as! AppDelegate).persistantCotainer.viewContext
+                                            let entity = NSEntityDescription.entity(forEntityName: "UserLogin", in: context)
+                                            let NewEntity = NSManagedObject(entity: entity!, insertInto: context)
+                                            
+                                            
+                                            
+                                            
+                                            
                                         }
                                         else{
                                             passmatch.isHidden = false

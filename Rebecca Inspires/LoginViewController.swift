@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class LoginViewController: UIViewController, UIViewControllerTransitioningDelegate {
     @IBOutlet weak var LoginButton: UIButton!
@@ -38,13 +39,12 @@ class LoginViewController: UIViewController, UIViewControllerTransitioningDelega
             MyData.sharedInstance.correctemail = true
             let expectedpassword = (MyData.sharedInstance.logindetails[emailaddress.text!])
             if expectedpassword == password.text! {
-                MyData.sharedInstance.correctpassword == true
                 IncorrectLabel.isHidden = true
+                UserDefaults.standard.set("true", forKey: "isLoggedin")
                 let vc = self.storyboard?.instantiateViewController(withIdentifier: "MainViewController") as! ViewController
                 present(vc, animated: true, completion: nil)
             }
             else{
-                MyData.sharedInstance.correctpassword = false
                 IncorrectLabel.isHidden = false
                 password.shake()
             }
@@ -61,6 +61,12 @@ class LoginViewController: UIViewController, UIViewControllerTransitioningDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
+
+        
+        
         // Do any additional setup after loading the view.
         LoginButton.layer.cornerRadius = LoginButton.frame.size.width / 2
         SignUpButton.layer.cornerRadius = SignUpButton.frame.size.width / 2
@@ -72,6 +78,8 @@ class LoginViewController: UIViewController, UIViewControllerTransitioningDelega
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    override func viewDidAppear(_ animated: Bool) {
     }
 
 }
