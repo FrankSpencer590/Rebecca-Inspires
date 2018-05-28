@@ -20,7 +20,6 @@ class SignupViewController: UIViewController {
     @IBOutlet weak var Password: UITextField!
     @IBOutlet weak var ConfirmPassword: UITextField!
     @IBOutlet weak var DoneButton: UIButton!
-    @IBOutlet weak var LoadingGif: UIImageView!
     
     
     @IBAction func DoneClicked(_ sender: Any) {
@@ -63,14 +62,13 @@ class SignupViewController: UIViewController {
                                         if (Password.text!) == (ConfirmPassword.text!) {
                                             //Perfect Signup
                                             DoneButton.isHidden = true
-                                             
-                                            LoadingGif.isHidden = false
+
                                             
                                             MyData.sharedInstance.logindetails[Emailaddress.text!] = Password.text!
                                             MyData.sharedInstance.names[FirstName.text!] = Surname.text!
                                             MyData.sharedInstance.usernames.append(Username.text!)
-                                            //let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
-                                            //present(vc, animated: true, completion: nil)
+                                            let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+                                            present(vc, animated: true, completion: nil)
                                             print("Sign Up Complete")
                                         }
                                         else{

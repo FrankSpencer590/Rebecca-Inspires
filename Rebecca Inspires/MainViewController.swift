@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController, UIViewControllerTransitioningDelegate {
+    @IBOutlet weak var OtherButton: UIButton!
+    @IBOutlet weak var ContactButton: UIButton!
     @IBOutlet weak var menuButton: UIButton!
     @IBOutlet weak var TwitterQuotes: UILabel!
     let bucketName = "randomlistofquotes"
@@ -16,6 +18,8 @@ class ViewController: UIViewController, UIViewControllerTransitioningDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         menuButton.layer.cornerRadius = menuButton.frame.size.width / 2
+        ContactButton.layer.cornerRadius = ContactButton.frame.size.width / 2
+        OtherButton.layer.cornerRadius = OtherButton.frame.size.width / 2
         
         //Pulling from Website
         if let url = URL(string: "https://s3.eu-west-2.amazonaws.com/randomlistofquotes/Rebecca's+Quotes.txt") {
@@ -49,6 +53,9 @@ class ViewController: UIViewController, UIViewControllerTransitioningDelegate {
         }
     }//End of viewDidLoad
     //Social Media Buttons
+    
+
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let secondVC = segue.destination as! VideosViewController

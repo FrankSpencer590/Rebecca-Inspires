@@ -19,5 +19,6 @@ class MyData: NSObject {
     var names = ["John":"Appleseed"]
     var correctemail = false
     var correctpassword = false
+    var SelectedViewController = "NONE"
     static let sharedInstance = MyData()
 }

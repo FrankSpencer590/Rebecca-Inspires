@@ -9,12 +9,16 @@
 import UIKit
 
 class ContactViewController: UIViewController {
+    @IBOutlet weak var dissmissButton: UIButton!
     @IBAction func Twitter(_ sender: Any) {
         if let url = URL(string: "http://www.google.com") {
             UIApplication.shared.open(url, options: [:])
         }
     }
     
+    @IBAction func dismiss(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
