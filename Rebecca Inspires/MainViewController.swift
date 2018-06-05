@@ -16,6 +16,7 @@ class ViewController: UIViewController, UIViewControllerTransitioningDelegate {
     let bucketName = "randomlistofquotes"
     let transition = CircularTransition()
     override func viewDidLoad() {
+        print("hello")
         super.viewDidLoad()
         menuButton.layer.cornerRadius = menuButton.frame.size.width / 2
         ContactButton.layer.cornerRadius = ContactButton.frame.size.width / 2
