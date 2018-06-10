@@ -18,9 +18,14 @@ class ViewController: UIViewController, UIViewControllerTransitioningDelegate {
     override func viewDidLoad() {
         print("hello")
         super.viewDidLoad()
+
         menuButton.layer.cornerRadius = menuButton.frame.size.width / 2
         ContactButton.layer.cornerRadius = ContactButton.frame.size.width / 2
         OtherButton.layer.cornerRadius = OtherButton.frame.size.width / 2
+        print("CHANGE HERE")
+        let background = UIColor(red: 90/255.0, green: 75/255.0, blue: 69/255.0, alpha: 1.0)
+        view.backgroundColor = background
+
         
         //Pulling from Website
         if let url = URL(string: "https://s3.eu-west-2.amazonaws.com/randomlistofquotes/Rebecca's+Quotes.txt") {
