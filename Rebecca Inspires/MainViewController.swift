@@ -61,27 +61,27 @@ class ViewController: UIViewController, UIViewControllerTransitioningDelegate {
 
     
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let secondVC = segue.destination as! VideosViewController
-        secondVC.transitioningDelegate = self
-        secondVC.modalPresentationStyle = .custom
-    }
+    //override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+      //  let secondVC = segue.destination as! VideosViewController
+    //    secondVC.transitioningDelegate = self
+    //    secondVC.modalPresentationStyle = .custom
+    //}
     
-    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        transition.transitionMode = .present
-        transition.startingPoint = menuButton.center
-        transition.circleColor = menuButton.backgroundColor!
+    //func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+     //   transition.transitionMode = .present
+     //   transition.startingPoint = menuButton.center
+     //   transition.circleColor = menuButton.backgroundColor!
         
-        return transition
-    }
+     //   return transition
+    //}
     
-    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        transition.transitionMode = .dismiss
-        transition.startingPoint = menuButton.center
-        transition.circleColor = menuButton.backgroundColor!
+   //func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    //    transition.transitionMode = .dismiss
+    //    transition.startingPoint = menuButton.center
+   //     transition.circleColor = menuButton.backgroundColor!
         
-        return transition
-    }
+    //    return transition
+    //}
     
     
     

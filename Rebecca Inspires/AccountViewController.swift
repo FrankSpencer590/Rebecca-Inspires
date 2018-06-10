@@ -8,21 +8,26 @@
 
 import UIKit
 
-class AccountViewController: UIViewController {
+class AccountViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var Nicknametextfield: UITextField!
     @IBOutlet weak var nicknamebutton: UIButton!
     
     
     @IBAction func nicknamepressed(_ sender: Any) {
+        Nicknametextfield.isHidden = false
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        <#code#>
+        //nicknamebutton.setTitle(Nicknametextfield.text, for: .normal)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.Nicknametextfield.delegate = self
+        
+        
         // Do any additional setup after loading the view.
     }
 
@@ -42,4 +47,20 @@ class AccountViewController: UIViewController {
     }
     */
 
+    
+    private func textFieldShouldReturn(textField: UITextField) -> Bool {
+        
+        //textField code
+        Nicknametextfield.isHidden = true
+        nicknamebutton.setTitle(Nicknametextfield.text, for: .normal)
+        
+        Nicknametextfield.resignFirstResponder()
+        performAction()
+        return true
+    }
+    
+    func performAction() {
+        //action events
+    }
 }
+
