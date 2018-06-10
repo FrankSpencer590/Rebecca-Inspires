@@ -46,21 +46,18 @@ class AccountViewController: UIViewController, UITextFieldDelegate {
         // Pass the selected object to the new view controller.
     }
     */
-
     
-    private func textFieldShouldReturn(textField: UITextField) -> Bool {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
         //textField code
-        Nicknametextfield.isHidden = true
+        print("RETURN DETECTED")
         nicknamebutton.setTitle(Nicknametextfield.text, for: .normal)
+        Nicknametextfield.isHidden = true
         
         Nicknametextfield.resignFirstResponder()
-        performAction()
         return true
     }
     
-    func performAction() {
-        //action events
-    }
+
 }
 

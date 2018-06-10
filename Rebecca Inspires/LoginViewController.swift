@@ -9,13 +9,22 @@
 import UIKit
 import CoreData
 
-class LoginViewController: UIViewController, UIViewControllerTransitioningDelegate {
+class LoginViewController: UIViewController, UIViewControllerTransitioningDelegate, UITextFieldDelegate {
     @IBOutlet weak var LoginButton: UIButton!
     @IBOutlet weak var SignUpButton: UIButton!
     @IBOutlet weak var emailaddress: ShakingTextField!
     @IBOutlet weak var password: ShakingTextField!
     @IBOutlet weak var IncorrectLabel: UILabel!
     let transition = CircularTransition()
+    override func viewDidLoad() {
+        super .viewDidLoad()
+        LoginButton.layer.cornerRadius = LoginButton.frame.size.width / 2
+        SignUpButton.layer.cornerRadius = SignUpButton.frame.size.width / 2
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        LoginButton.layer.cornerRadius = LoginButton.frame.size.width / 2
+        SignUpButton.layer.cornerRadius = SignUpButton.frame.size.width / 2
+    }
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         transition.transitionMode = .present
         transition.startingPoint = LoginButton.center
@@ -32,9 +41,7 @@ class LoginViewController: UIViewController, UIViewControllerTransitioningDelega
         return transition
     }
     
-    
-    
-    @IBAction func Login(_ sender: Any) {
+    func login() {
         if ((MyData.sharedInstance.logindetails[emailaddress.text!]) != nil) {
             MyData.sharedInstance.correctemail = true
             let expectedpassword = (MyData.sharedInstance.logindetails[emailaddress.text!])
@@ -57,36 +64,16 @@ class LoginViewController: UIViewController, UIViewControllerTransitioningDelega
         }
     }
     
+    @IBAction func Login(_ sender: Any) {
+        login()
+    }
     
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-
-
-        
-        
-        // Do any additional setup after loading the view.
-        LoginButton.layer.cornerRadius = LoginButton.frame.size.width / 2
-        SignUpButton.layer.cornerRadius = SignUpButton.frame.size.width / 2
-        
-        emailaddress.delegate = self
-        password.delegate = self
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    override func viewDidAppear(_ animated: Bool) {
-    }
-
-}
-
-
-extension LoginViewController: UITextFieldDelegate {
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    private func textFieldShouldReturn(_ textField: ShakingTextField) -> Bool {
+        print("return")
+        login()
         textField.resignFirstResponder()
         return true
     }
+
 }
+
