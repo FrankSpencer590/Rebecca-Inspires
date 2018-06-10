@@ -71,7 +71,7 @@ class SignupViewController: UIViewController {
                                             let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
                                             present(vc, animated: true, completion: nil)
                                             print("Sign Up Complete")
-                                            
+                                            UserDefaults.standard.set(true, forKey: "loggedIn")
                                             //let context = (UIApplication.shared.delegate as! AppDelegate).persistantCotainer.viewContext
                                             //let entity = NSEntityDescription.entity(forEntityName: "UserLogin", in: context)
                                             //let NewEntity = NSManagedObject(entity: entity!, insertInto: context)

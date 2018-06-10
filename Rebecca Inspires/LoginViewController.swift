@@ -43,6 +43,7 @@ class LoginViewController: UIViewController, UIViewControllerTransitioningDelega
                 UserDefaults.standard.set("true", forKey: "isLoggedin")
                 let vc = self.storyboard?.instantiateViewController(withIdentifier: "MainViewController") as! ViewController
                 present(vc, animated: true, completion: nil)
+                UserDefaults.standard.set(true, forKey: "loggedIn")
             }
             else{
                 IncorrectLabel.isHidden = false
@@ -62,6 +63,19 @@ class LoginViewController: UIViewController, UIViewControllerTransitioningDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
+        if launchedBefore  {
+            print("Not first launch.")
+            let loggedIn = UserDefaults.standard.bool(forKey: "loggedIn")
+            if loggedIn {
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "MainViewController") as! ViewController
+                present(vc, animated: true, completion: nil)
+            }
+        } else {
+            print("First launch, setting UserDefault.")
+            UserDefaults.standard.set(true, forKey: "launchedBefore")
+            UserDefaults.standard.set(false, forKey: "loggedIn")
+        }
         
         
 
