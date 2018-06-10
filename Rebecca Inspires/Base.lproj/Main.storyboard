@@ -894,8 +894,9 @@
         <image name="Twitter Logo" width="207" height="205"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="urC-Vc-XvJ"/>
         <segue reference="BHY-b4-C1i"/>
-        <segue reference="3X8-DY-6ei"/>
+        <segue reference="yqr-Oh-iIY"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.35436290502548218" green="0.2942902147769928" blue="0.26866888999938965" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
